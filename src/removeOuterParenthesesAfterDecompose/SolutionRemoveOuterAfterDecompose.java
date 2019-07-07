@@ -3,8 +3,6 @@ package removeOuterParenthesesAfterDecompose;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sound.midi.Soundbank;
-
 public class SolutionRemoveOuterAfterDecompose {
 	
 	public static String removeOuterParentheses(String S) {
