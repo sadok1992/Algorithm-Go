@@ -1,5 +1,7 @@
 package helperFunctions;
 
+import helperStructure.TreeNode;
+
 public class GenericAssister {
 	
 	private GenericAssister() {
@@ -27,6 +29,14 @@ public class GenericAssister {
 		}
 		System.out.print(A[A.length - 1]);
 		System.out.print("]");
+	}
+	
+	public static void printTree(TreeNode root) {
+		if (root != null) {
+			System.out.println(root.val);
+			printTree(root.left);
+			printTree(root.right);
+		}
 	}
 
 }

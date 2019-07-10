@@ -1,5 +1,8 @@
 package rangeSumBST;
 
+import helperFunctions.GenericAssister;
+import helperStructure.TreeNode;
+
 public class SolutionRangeSumBST {
 	
 	/*
@@ -16,14 +19,6 @@ public class SolutionRangeSumBST {
     	else 
     		return rangeSumBST(root.right,L,R);
     }	
-    
-    public static void printTree(TreeNode root) {
-		if (root != null) {
-			System.out.println(root.val);
-			printTree(root.left);
-			printTree(root.right);
-		}
-	}
 
 	public static int sumBinarySearchTree(TreeNode root) {
 		if(root==null)
@@ -45,7 +40,7 @@ public class SolutionRangeSumBST {
 		root.left = node5;
 		root.right = node15;
 		System.out.println("printing tree");
-		printTree(root);
+		GenericAssister.printTree(root);
 		
 		System.out.println("printing sum of tree");
 		System.out.println(sumBinarySearchTree(root));
